@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="loginContainer">
+        <img class="imageSide" src="images/paris.png" alt="Image">
+        <div class="registerContent">
+            <img id="logo" src="images/Logo SoWISO@2x.png" alt="logo">
+            <p class="tagline">Please complete to create your advert account.</p>
+            <form method="post" action="login.html">
+                <div class="name">
+                    <input type="text" name="firstName" id="firstName" placeholder="First name">
+                    <input type="text" name="lastName" id="lastName" placeholder="Last name">
+                </div>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                <input type="text" name="companyName" id="companyName" placeholder="Company name">
+                <input type="text" name="ChamberOfCommerce" id="ChamberOfCommerce" placeholder="Chamber of Commerce">
+
+                <input type="checkbox" name="TOS" id="TOS"><label for="TOS" class="newCheckboxTOS"></label> <label
+                    class="TOS--label" for="TOS">I agree with terms and conditions</label>
+
+                <input type="checkbox" name="IAmACompany" id="IAmACompany"><label for="IAmACompany"
+                    class="newCheckbox-IAAC"></label> <label class="IAmACompany--label" for="IAmACompany">I declare to
+                    be a company</label>
+
+                <a class="requestRegister" href="login.html">Request sign up</a>
+
+                <a class="goToLogin" href="login.html">Already have an account? Sign in.</a>
+
+            </form>
+            <span class="TOSPP">Term of use. Privacy policy</span>
+        </div>
+    </div>
+</body>
+
+</html>

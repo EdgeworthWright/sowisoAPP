@@ -1,0 +1,196 @@
+.imageSide {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.loginContent {
+  margin: 7em auto;
+  text-align: center;
+  max-width: 50%;
+}
+
+#logo {
+  width: 15vw;
+  object-fit: contain;
+}
+
+.tagline {
+  color: rgba(77, 79, 92, .5);
+}
+
+.moreInfo {
+  margin: 3em 0 4em;
+  color: #43425D;
+  font-size: 1.1em
+}
+
+.loginContent a:not(.forgotPassword) {
+  max-width: 200px;
+  border: 1px solid #43425D;
+  border-radius: 4px;
+  padding: 1em 3em;
+  margin: 1em;
+  text-decoration: none;
+}
+
+.loginContent a.login {
+  background: #43425D 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.loginContent a.register {
+  color: #4D4F5C;
+}
+
+input[type=text],
+input[type=password],
+input[type=text]::placeholder,
+input[type=password]::placeholder,
+input[type=email],
+input[type=email]::placeholder
+{
+  color: #43425D;
+  opacity: 1;
+}
+
+input[type=text],
+input[type=password],
+input[type=email]
+{
+  border: none;
+  border-bottom: 2px solid #E9E9F0;
+  width: 100%;
+  padding: 2em 0 1em;
+}
+
+.loginContent form {
+  display: block;
+  width: 100%;
+}
+
+#remember,
+#TOS,
+#IAmACompany {
+  display: none; 
+}
+
+.newCheckbox,
+.newCheckboxTOS,
+.newCheckbox-IAAC {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #808495;
+  border-radius: 4px;
+  background: white;
+  position: absolute;
+}
+
+.newCheckbox {
+  top: 50.2vh;
+  left: 62.5vw;  
+}
+
+.newCheckboxTOS {
+  bottom: 21vh;
+}
+
+.newCheckbox-IAAC {
+  bottom: 17.8vh;
+}
+
+#remember:checked ~ .newCheckbox,
+#TOS:checked ~ .newCheckboxTOS,
+#IAmACompany:checked ~ .newCheckbox-IAAC {
+  background: #5A55AA;
+}
+
+.remember--label {
+  position: relative;
+  top: .6em;
+}
+
+.forgotPassword {
+  color: #43425D;
+  text-decoration: none;
+  position: relative;
+  top: .6em;
+  left: 9em;
+}
+
+#login {
+  position: relative;
+  top: 7em;
+  right: 8em;
+  border: 1px solid #43425D;
+  border-radius: 4px;
+  padding: 1em 3em;
+  background: #43425D 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+}
+
+#reset {
+  margin: 3em;
+  border: 1px solid #43425D;
+  border-radius: 4px;
+  padding: 1em 3em;
+  background: #43425D 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+}
+
+.requestRegister {
+  margin: 1em;
+  border: 1px solid #43425D;
+  border-radius: 4px;
+  padding: 1em 3em;
+  background: #43425D 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+}
+
+.registerContent {
+  margin: .2em auto;
+  text-align: center;
+  max-width: 50%;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name input {
+  max-width: 45%;
+}
+
+.registerContent input[type=checkbox],
+.registerContent label {
+  display: block;
+  margin: .5em;
+}
+
+.IAmACompany--label {
+  text-align: left;
+  position: relative;
+  left: 2em;
+}
+
+.TOS--label {
+  text-align: left;
+  position: relative;
+  left: 2em;
+}
+
+.requestRegister {
+  display: block;
+  text-decoration: none;
+}
+
+.goToLogin {
+  color: #43425D;
+}
+
+.TOSPP {
+  position: absolute;
+  bottom: .5em;
+  right: 19vw;
+}

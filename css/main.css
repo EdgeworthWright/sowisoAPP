@@ -17,6 +17,12 @@ body {
     grid-template-columns: 15% auto;
 }
 
+.loginContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 nav {
     height: 1420px;
     border-right: 1px solid black;
