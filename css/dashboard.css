@@ -2,6 +2,14 @@
   background-image: url(../images/navIcons/dashboardCurrent.png);
 }
 
+.wrapper {
+  grid-template-rows: 4.15% 4.15% auto;
+}
+
+nav {
+  height: 2400px;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +25,10 @@
   margin: 1em;
 }
 
+.huge {
+  width: 100%;
+}
+
 .big {
   width: 60%;
 }
@@ -27,7 +39,7 @@
 
 .tiny {
   width: 30.8%;
-  height: 20%;
+  height: 13%;
 }
 
 .contentTitle {
@@ -40,33 +52,61 @@
 .quickDetails,
 .totalUsers,
 .activeNewUsers,
-.totalAdRev
+.totalAdRev,
+.statistics,
+.referrer,
+.theMap
 {
   background: #FFFFFF;
   box-shadow: 0px 2px 6px #0000000A;
 }
 
-.totalUsers .itemContent span,
-.activeNewUsers .itemContent span,
-.totalAdRev .itemContent span {
+.totalUsers .itemContent span:first-of-type,
+.activeNewUsers .itemContent span:first-of-type,
+.totalAdRev .itemContent span:first-of-type {
   display: block;
   color: #4D4F5C;
   font-weight: bold;
   font-size: 2em;
+  margin: 2em 0 .5em;
 }
 
 .totalUsers .itemContent .percentage,
 .activeNewUsers .itemContent .percentage,
 .totalAdRev .itemContent .percentage {
   font-size: initial;
-  
+  display: block;
+}
+
+.positive {
+  color: #3CC480;
+}
+
+.positive:before {
+  content: '';
+  background-image: url(../images/greenArrow.png);
+  padding: 1em;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+}
+
+.negative {
+  color: #FF4141;
+}
+
+.negative:before {
+  content: '';
+  background-image: url(../images/redArrow.png);
+  padding: 1em;
+  background-repeat: no-repeat;
+  background-position: center 20px;
 }
 
 .totalUsers .itemContent img,
 .activeNewUsers .itemContent img,
 .totalAdRev .itemContent img {
   position: relative;
-  bottom: 6em;
+  bottom: 10em;
   left: 10em;
   width: 200px;
 }
@@ -94,6 +134,102 @@
 
 .nogIets {
   grid-area: other;
+}
+
+.statistics select {
+  position: relative;
+  left: 80%;
+  bottom: 2em;
+}
+
+select {
+  box-shadow: 0px 2px 3px #0000000D;
+  border: 1px solid #D7DAE2;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  padding: .6em 1.4em .5em .8em;
+  margin: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: white;
+  background-image: url('../images/downArrow.png'),
+    linear-gradient(to bottom, #ffffff 0%, #FFFFFF 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+
+.referrer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.referrer {
+  padding: 0 0 2em;
+}
+
+.referrer thead {
+  background: #F5F6FA;
+  color: #A3A6B4;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.referrer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.referrer td {
+  padding: 1em;
+}
+
+.referrer tbody tr {
+  border-bottom: 1px solid #F1F1F3;
+}
+
+.theMap a {
+  color: #3B86FF;
+  text-decoration: none;
+  position: relative;
+  left: 20em;
+  bottom: 2.5em;
+}
+
+.theMap img {
+  max-width: 100%;
+}
+
+.theMap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.theMap td {
+  padding: 2em 2em;
+}
+
+.theMap td:last-of-type {
+  text-align: right;
+}
+
+.theMap tr:first-of-type td:first-of-type:before {
+  content: '';
+  background-image: url(../images/blueDot.png);
+  padding: 1em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.theMap tr:last-of-type td:first-of-type:before {
+  content: '';
+  background-image: url(../images/greenDot.png);
+  padding: 1em;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .topProducts table {
@@ -177,12 +313,12 @@
 }
 
 .topProducts--link,
-.moneyStats--link {
+.referrer--link {
   color: #3B86FF;
   text-decoration: none;
   width: 100%;
   position: relative;
-  top: 2.5em;
+  top: 1.5em;
 }
 
 .quickDetails h2,

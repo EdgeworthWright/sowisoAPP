@@ -2,6 +2,10 @@
   background-image: url(../images/navIcons/productsCurrent.png);
 }
 
+.wrapper {
+  grid-template-rows: 7% 7% auto;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
