@@ -1,0 +1,236 @@
+#dashboardLink:before {
+  background-image: url(../images/navIcons/dashboardCurrent.png);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /*   display: grid;
+  grid-template-areas: "top top quick"
+                       "money other other";
+  grid-gap: 1em; */
+  height: 100%;
+  /*   margin: 0 1em; */
+}
+
+.content div {
+  margin: 1em;
+}
+
+.big {
+  width: 60%;
+}
+
+.small {
+  width: 35%;
+}
+
+.tiny {
+  width: 30.8%;
+  height: 20%;
+}
+
+.contentTitle {
+  color: #4D4F5C;
+  font-size: 21px;
+  text-align: left;
+}
+
+.topProducts,
+.quickDetails,
+.totalUsers,
+.activeNewUsers,
+.totalAdRev
+{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px #0000000A;
+}
+
+.totalUsers .itemContent span,
+.activeNewUsers .itemContent span,
+.totalAdRev .itemContent span {
+  display: block;
+  color: #4D4F5C;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.totalUsers .itemContent .percentage,
+.activeNewUsers .itemContent .percentage,
+.totalAdRev .itemContent .percentage {
+  font-size: initial;
+  
+}
+
+.totalUsers .itemContent img,
+.activeNewUsers .itemContent img,
+.totalAdRev .itemContent img {
+  position: relative;
+  bottom: 6em;
+  left: 10em;
+  width: 200px;
+}
+
+.totalUsers .itemContent h5,
+.activeNewUsers .itemContent h5,
+.totalAdRev .itemContent h5 {
+  font-weight: normal;
+  color: #43425D;
+}
+
+.topProducts {
+  grid-area: top;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.quickDetails {
+  grid-area: quick;
+}
+
+.moneyStats {
+  grid-area: money;
+}
+
+.nogIets {
+  grid-area: other;
+}
+
+.topProducts table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.topProducts thead {
+  background: #F5F6FA;
+  color: #A3A6B4;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.topProducts thead td {
+  padding: 1em 2em;
+}
+
+.topProducts tbody td {
+  padding: 2em 3.5em;
+}
+
+.topProducts td:first-of-type {
+  text-align: left;
+}
+
+.topProducts td:last-of-type {
+  text-align: right;
+}
+
+.topProducts tbody {
+  color: #4D4F5C;
+}
+
+.topProducts tbody tr {
+  border-bottom: 1px solid #F1F1F3;
+}
+
+.topProducts .product1:before {
+  content: "";
+  background: url(../images/Product.Img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  right: 1em;
+  padding: 1em;
+}
+
+.topProducts .product2:before {
+  content: "";
+  background: url(../images/Product.Img-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  right: 1em;
+  padding: 1em;
+}
+
+.topProducts .product3:before {
+  content: "";
+  background: url(../images/Product.Img-2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  right: 1em;
+  padding: 1em;
+}
+
+.topProducts .product4:before {
+  content: "";
+  background: url(../images/Product.Img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  right: 1em;
+  padding: 1em;
+}
+
+.topProducts--link,
+.moneyStats--link {
+  color: #3B86FF;
+  text-decoration: none;
+  width: 100%;
+  position: relative;
+  top: 2.5em;
+}
+
+.quickDetails h2,
+.quickDetails--item {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #F1F1F3;
+}
+
+.quickDetails--item {
+  padding: 1.3em 0;
+}
+
+.quickDetails--item span:first-of-type {
+  color: rgba(77, 79, 92, .5);
+  text-align: left;
+}
+
+.quickDetails--item span:first-of-type:before {
+  content: "";
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  right: 1em;
+  padding: 1em;
+}
+
+.quickDetails--item .newUsers:before {
+  background: url(../images/new-user1.png);
+}
+
+.quickDetails--item .scans:before {
+  background: url(../images/recycle1.png);
+}
+
+.quickDetails--item .waiting:before {
+  background: url(../images/timer1.png);
+}
+
+.quickDetails--item .attention:before {
+  background: url(../images/warning1.png);
+}
+
+.quickDetails--item .lostUsers:before {
+  background: url(../images/error1.png);
+}
+
+.quickDetails--item span:last-of-type {
+  text-align: right;
+  float: right;
+}

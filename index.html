@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/progresscircle.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="navContent">
+                <div class="logo">
+                    <img src="images/Logo SoWISO.png" alt="logo">
+                </div>
+
+                <a href="#">
+                    <span id="homeLink" class="link--text">Home</span>
+                </a>
+                <a href="dashboard.html">
+                    <span id="dashboardLink" class="link--text">Dashboard</span>
+                </a>
+                <a href="#">
+                    <span id="inboxLink" class="link--text">Inbox</span>
+                </a>
+                <a href="index.html" id="current">
+                    <span id="productsLink" class="link--text">Products</span>
+                </a>
+                <a href="#">
+                    <span id="invoicesLink" class="link--text">Invoices</span>
+                </a>
+                <a href="#">
+                    <span id="usersLink" class="link--text">Users</span>
+                </a>
+                <a href="#">
+                    <span id="chatLink" class="link--text">Chat Room</span>
+                </a>
+                <a href="#">
+                    <span id="calendarLink" class="link--text">Calendar</span>
+                </a>
+                <a href="#">
+                    <span id="supportLink" class="link--text">Help Center</span>
+                </a>
+                <a href="#">
+                    <span id="settingsLink" class="link--text">Settings</span>
+                </a>
+
+                <p id="copyright">DMVS-MEDIA 2019 &copy;<br> <span>Term of use.</span> <span>Privacy policy</span></p>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+
+            <div class="topBar">
+                <form action="">
+                    <label for="search"></label>
+                    <input type="search" name="search" id="search" placeholder="Search transactions, invoices or help">
+                </form>
+                <div class="icons">
+                    <img src="images/support.png" alt="support">
+                    <img src="images/chat.png" alt="chat">
+                    <div class="dropdown">
+                        <a href="#"><img src="images/notification.png" alt="notifcations" class="dropbtn"></a>
+                        <div class="dropdown-content">
+                            <div>
+                                <h2>Notifications</h2>
+                            </div>
+                            <a href="#">
+                                <h3>25+ New Users - Amsterdam Zuidoost</h3>
+                                <p>Dear John Doe, There 25+ new users in your Amsterdam Area</p>
+                            </a>
+                            <a href="#">
+                                <h3>25+ New Users - Amsterdam Noord</h3>
+                                <p>Are you available later today to chat?</p>
+                            </a>
+                            <a href="#">
+                                <h3>100+ New Users - Amsterdam Zuidoost</h3>
+                                <p>I will be unavailable until after 5pm today.</p>
+                            </a>
+                            <a href="#">
+                                <h3>Alert!!! You have a new area to advertise</h3>
+                                <p>Important!</p>
+                            </a>
+                            <a href="#">
+                                <h3>10,000+ New Users - The Netherlands</h3>
+                                <p>FYI there 10,000+ users in The Netherlands.</p>
+                            </a>
+                            <div>
+                                <a href="#">See all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">John Doe</a>
+                        <div class="dropdown-content">
+                            <div>
+                                <span>Status:</span> <span>Online</span>
+                            </div>
+                            <a href="#">
+                                Account settings
+                            </a>
+                            <a href="#">
+                                Feedback
+                            </a>
+                            <a href="#">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                    <span class="arrow"></span>
+                    <div class="profilePicture">
+                        <img src="images/avatar.jpg" alt="profile picture">
+                    </div>
+                </div>
+            </div>
+
+            <h1 id="pageTitle">Products</h1>
+
+            <div class="content">
+
+                <div class="topProducts big">
+                    <div class="itemContent">
+                        <h2 class="contentTitle">Top Products</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Product</td>
+                                    <td>Availability</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product product1">TV - Brand LG electronics</td>
+                                    <td>289,192</td>
+                                </tr>
+                                <tr>
+                                    <td class="product product2">Washing machine - Siemens washing machine</td>
+                                    <td>291,192</td>
+                                </tr>
+                                <tr>
+                                    <td class="product product3">Washing machine - Bosch wasmachine serie 6</td>
+                                    <td>100,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="product product4">TV - Brand Samsung electronics</td>
+                                    <td>90,192</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="topProducts--link">Show more</a>
+                    </div>
+                </div>
+
+                <div class="quickDetails small">
+                    <div class="itemContent">
+                        <h2 class="contentTitle">Quick Details</h2>
+
+                        <div class="quickDetails--item">
+                            <span class="newUsers">Last 24 Hours</span>
+                            <span>290 new users</span>
+                        </div>
+                        <div class="quickDetails--item">
+                            <span class="scans">Awaiting Process</span>
+                            <span>490 scans</span>
+                        </div>
+                        <div class="quickDetails--item">
+                            <span class="waiting">Waiting on activation</span>
+                            <span>20</span>
+                        </div>
+                        <div class="quickDetails--item">
+                            <span class="attention">Attention needed</span>
+                            <span>0</span>
+                        </div>
+                        <div class="quickDetails--item">
+                            <span class="lostUsers">Lost users</span>
+                            <span>42 users</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moneyStats small">
+                    <div class="itemContent">
+                        <div class="adCorner">
+                            <div class="adCorner__content">
+                                <span id="closeAd">x</span>
+                                <h2 class="adCorner--title">STARTER + PACKAGE</h2>
+                                <span class="adCorner--price">€8</span>
+                                <span class="adCorner--subText">PER USER, MONTH</span>
+                                <span class="adCorner--description">Starter + features for your business to
+                                    grow.</span>
+                                <a href="#" target="_blank" class="adCorner--CTA">
+                                    <span class="adCorner--CTA__text">FREE TRAIL</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="contentTitle">Money Stats</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Total budget</td>
+                                    <td>€50,000</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="circlechart" data-percentage="63">
+                                            saved
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total Spent</td>
+                                    <td>Money Saved</td>
+                                </tr>
+                                <tr>
+                                    <td>€18,570</td>
+                                    <td>€31,430</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <a href="#" class="moneyStats--link">View full report</a>
+                    </div>
+                </div>
+
+                <div class="nogIets big">
+                    <div class="itemContent">
+                        <h2 class="contentTitle">Hier moet ik nog wat zeggen ;)</h2>
+                        <p id="avg">Avg. €5,309</p>
+
+                        <select name="" id="">
+                            <option value="monthly" selected>Monthly</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="lastYear" selected>Last Year</option>
+                        </select>
+
+                        <div class="chart">
+                            <div class="chartContent"></div>
+                            <div class="yas">
+                                <span>€8k</span>
+                                <span>€5k</span>
+                                <span>€2k</span>
+                                <span>€0</span>
+                                <span>-€2k</span>
+                                <span>-€5k</span>
+                                <span>-€8k</span>
+                            </div>
+                            <div class="xas">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="js/progresscircle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('.circlechart').circlechart();
+            });
+        });
+    </script>
+</body>
+
+</html>
