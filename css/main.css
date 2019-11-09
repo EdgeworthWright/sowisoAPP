@@ -92,6 +92,20 @@ nav {
     background-image: url(../images/navIcons/settings.png);
 }
 
+.navContent .hamburger {
+    display: none;
+}
+
+.navContent .smallNavImage {
+    display: none;
+    position: relative;
+    left: 1.5em;
+    top: .5em;
+}
+
+.navContent #current .smallNavImage {
+    left: .8em;
+}
 
 #current {
     border-left: #A3A0FB .7em solid;
