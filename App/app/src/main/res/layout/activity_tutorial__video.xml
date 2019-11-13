@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:fitsSystemWindows="true"
+    tools:context=".Tutorial_Video">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="0dp"
+        android:alpha="1"
+        android:background="@drawable/rounded_container"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:visibility="visible"
+        app:contentInsetStart="16dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignTop="@+id/container1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="59dp"
+        android:visibility="visible">
+
+        <VideoView
+            android:id="@+id/tutorialVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        style="@style/logoFinalPosition"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo2x" />
+
+    <ImageButton
+        android:id="@+id/backButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="42dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back_button"
+        android:scaleType="centerInside"
+        android:src="@drawable/backarrow" />
+
+    <Button
+        android:id="@+id/ScanButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/default_button"
+        android:text="Scan"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ScanButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="175dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium mauris lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium mauris lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium mauris lectus." />
+
+</RelativeLayout>

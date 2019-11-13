@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#3B86FF</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="logoFinalPosition">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginStart">130dp</item>
+        <item name="android:layout_marginTop">26dp</item>
+        <item name="android:contentDescription">@string/logo</item>
+    </style>
+
+</resources>
